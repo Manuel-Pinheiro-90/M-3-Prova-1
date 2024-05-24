@@ -3,7 +3,7 @@
         "brand": "Fiat",
         "brandLogo": "https://upload.wikimedia.org/wikipedia/it/thumb/9/9e/Logo_della_Fiat.svg/1200px-Logo_della_Fiat.svg.png",
         "model": "500L",
-        "modelImage": "https://picsum.photos/200/300?random=1",
+        "modelImage": "https://cdn.motor1.com/images/mgl/7WB6W/s1/copertina-fiat-500l-restyling-la-familiare-e-piu-cross-e-tecnologica.jpg",
         "year": 2015,
         "price": 7500,
         "available": false
@@ -12,7 +12,7 @@
         "brand": "Fiat",
         "brandLogo": "https://upload.wikimedia.org/wikipedia/it/thumb/9/9e/Logo_della_Fiat.svg/1200px-Logo_della_Fiat.svg.png",
         "model": "500 Abarth",
-        "modelImage": "https://picsum.photos/200/300?random=2",
+        "modelImage": "https://www.clubalfa.it/wp-content/uploads/2020/03/Nuova-Fiat-500e-Abarth-render-1200x675.png",
         "year": 2010,
         "price": 3500,
         "available": true
@@ -21,7 +21,7 @@
         "brand": "Ford",
         "brandLogo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDDPh4w0W3MDZ4NMXsxYPCDaw8_3UNNr4uurazBA46pg&s",
         "model": "Taurus",
-        "modelImage": "https://picsum.photos/200/300?random=3",
+        "modelImage": "https://hips.hearstapps.com/hmg-prod/amv-prod-cad-assets/images/12q2/450434/2013-ford-taurus-sel-awd-instrumented-test-review-car-and-driver-photo-461441-s-original.jpg?crop=1.00xw:1.00xh;0,0&resize=640:*",
         "year": 2009,
         "price": 5200,
         "available": false
@@ -30,7 +30,7 @@
         "brand": "Ford",
         "brandLogo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDDPh4w0W3MDZ4NMXsxYPCDaw8_3UNNr4uurazBA46pg&s",
         "model": "Focus",
-        "modelImage": "https://picsum.photos/200/300?random=4",
+        "modelImage": "https://www.gpas-cache.ford.com/guid/3c3e2039-651c-396c-9d4a-9341fa79386b.png",
         "year": 2014,
         "price": 9700,
         "available": true
@@ -39,7 +39,7 @@
         "brand": "Audi",
         "brandLogo": "https://avatarfiles.alphacoders.com/163/163206.png",
         "model": "A3",
-        "modelImage": "https://picsum.photos/200/300?random=5",
+        "modelImage": "https://cdn.drivek.com/configurator-imgs/cars/it/Original/AUDI/A3-SPORTBACK/44134_HATCHBACK-5-DOORS/audi-a3-sportback-front-view.jpg",
         "year": 2012,
         "price": 4300,
         "available": true
@@ -48,7 +48,7 @@
         "brand": "Audi",
         "brandLogo": "https://avatarfiles.alphacoders.com/163/163206.png",
         "model": "Q7",
-        "modelImage": "https://picsum.photos/200/300?random=6",
+        "modelImage": "https://hd2.tudocdn.net/1139125?w=1200&h=900",
         "year": 2020,
         "price": 41700,
         "available": false
