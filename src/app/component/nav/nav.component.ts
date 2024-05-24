@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrl: './nav.component.scss'
 })
 export class NavComponent {
-
+show:boolean = false
 }
