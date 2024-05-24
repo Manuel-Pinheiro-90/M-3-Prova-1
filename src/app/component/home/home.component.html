@@ -1,25 +1,28 @@
 <div class="container">
-  <div class="row">
-    <div class="col" *ngFor="let au of arrayLogo">
-      <div class="card">
-        <img [src]="[au]" class="card-img-top imLog" alt="..." />
-      </div>
+  <h1 class="text-light text-center m-3">I nostri Marchi</h1>
+  <div class="row bg-black">
+    <div class="col d-flex justify-content-center" *ngFor="let au of arrayLogo">
+      <img [src]="[au]" class="card-img-top imLog" alt="..." />
     </div>
   </div>
 
   <div class="row">
-    <div class="col-6" *ngFor="let car of randomCar">
+    <h1 class="text-light text-center m-3">Auto in evidenza</h1>
+    <div
+      class="col-12 col-md-6 d-flex justify-content-center"
+      *ngFor="let car of randomCar"
+    >
       <div
         class="card cdsty text-center p-2 m-5"
         [ngClass]="{
-          'bg-success': car.available,
-          'bg-danger': !car.available
+          'bg-warning': car.available,
+          'bg-secondary': !car.available
         }"
       >
         <div class="card-body d-flex flex-column justify-content-between">
-          <h5 class="card-title">{{ car.brand }}</h5>
+          <p class="card-title fs-3">{{ car.brand }}</p>
           <img [src]="[car.modelImage]" alt="" />
-          <p class="card-text">Modello {{ car.model }}</p>
+          <h3 class="card-text">Modello {{ car.model }}</h3>
           <p class="card-text">Anno {{ car.year }}</p>
           <p class="card-text">Prezzo {{ car.price }} $</p>
           <p>
@@ -29,7 +32,7 @@
           <a
             class="btn btn-primary"
             [routerLink]="['/' + car.brand.toLocaleLowerCase()]"
-            >Toggle link</a
+            >Brand</a
           >
         </div>
       </div>

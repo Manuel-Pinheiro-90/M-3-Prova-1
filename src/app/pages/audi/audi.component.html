@@ -5,18 +5,18 @@
   </div>
 
   <div class="row">
-    <div class="col-6" *ngFor="let car of caraudiArray">
+    <div class="col-12 col-md-6" *ngFor="let car of caraudiArray">
       <div
-        class="card"
+        class="card fs-3"
         [ngClass]="{
-          'bg-success': car.available,
-          'bg-danger': !car.available
+          'bg-warning': car.available,
+          'bg-secondary': !car.available
         }"
       >
         <div class="card-body d-flex flex-column justify-content-between">
           <h5 class="card-title">{{ car.brand }}</h5>
           <img [src]="[car.modelImage]" alt="" />
-          <p class="card-text">Modello {{ car.model }}</p>
+          <p class="card-text fs-3">Modello {{ car.model }}</p>
           <p class="card-text">Anno {{ car.year }}</p>
           <p class="card-text">Prezzo {{ car.price }} $</p>
           <p>
