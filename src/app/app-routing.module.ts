@@ -4,6 +4,7 @@ import { AudiComponent } from './pages/audi/audi.component';
 import { FiatComponent } from './pages/fiat/fiat.component';
 import { FordComponent } from './pages/ford/ford.component';
 import { HomeComponent } from './component/home/home.component';
+import { Page404Component } from './pages/page404/page404.component';
 
 const routes: Routes = [
 
@@ -29,7 +30,11 @@ const routes: Routes = [
 {path:'ford',
   component:FordComponent,
 },
+{
+path:'**',
+component: Page404Component,
 
+}
 
 
 ];
