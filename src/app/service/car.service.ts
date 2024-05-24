@@ -9,7 +9,7 @@ export class CarService {
   carArray: iAuto[] = [];
 
   constructor() {
-    this.getAuto(); // Richiama la funzione asincrona senza `await` nel costruttore
+    this.getAuto();
   }
 
   async getAuto(): Promise<void> {
@@ -20,15 +20,16 @@ export class CarService {
       const allcar = <IGesonContent>await response.json();
 
       // Recupero l'array di macchine dall'oggetto JSON
-      this.carArray = allcar; // Assumendo che `cars` sia la chiave dell'array nel JSON
+      this.carArray = allcar;
     } catch (error) {
       console.error('Errore durante il recupero degli articoli:', error);
     }
   }
 
-  getall(): iAuto[] {
+  getall(): iAuto[] { //funzione di test ora inutile
     return this.carArray;
   }
+
 
 
 getRandomAuto(): iAuto[] {
@@ -36,19 +37,19 @@ getRandomAuto(): iAuto[] {
   return shuffled.slice(0, 2); //seleziono i primi 2 e li ritorno
 }
 
-
+// funzione per filtrare le macchine per marca
 getFiat():iAuto[]{
   return this.carArray.filter(car => car.brand === 'Fiat');
 }
-
+// funzione per filtrare le macchine per marca
 getFord():iAuto[]{
   return this.carArray.filter(car => car.brand === 'Ford');
 }
-
+// funzione per filtrare le macchine per marca
 getAudi():iAuto[]{
   return this.carArray.filter(car => car.brand === 'Audi');
 }
-
+//funzione di recupero di tutti i brand per mettere logo in home (potevo farlo a mano  ma vabhe...)
 getBrandlogo(){
   let arrayLogo =[...new Set(this.carArray.map(car=>car.brandLogo))];
   return arrayLogo;
